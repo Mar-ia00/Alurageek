@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+      <img src="img/Logo.svg" alt="Logo AluraGeek" class="logo">
+  </header>
+  <!-- Main Content -->
+  <main>
+    <section class="product-section">
+      <!-- Product Section -->
+      <div class="products">
+        <h2>MIS PRODUCTOS:</h2>
+        <div class="product-list">
+          <!-- Products will be dynamically added here -->
+        </div>
+      </div>
+
+      <!-- Product Form -->
+      <div class="product-form">
+        <h2>AGREGAR PRODUCTO:</h2>
+        <form id="addProductForm">
+
+          <input type="text" id="productName" placeholder="nombre..." required>
+
+          <input type="number" id="productPrice" placeholder="precio..." required>
+
+          <input type="file" id="productImage" accept="image/*" placeholder="imagen..." required>     
+        <div class="product-form-buttons">
+          <button type="submit">Agregar</button>
+          <button type="button" id="clearFields">Limpiar</button>
+        </div>
+
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <img src="img/Logo.svg" alt="Logo AluraGeek" class="logo">
+    <p>DESAROLLADO POR MARIA FERNANDA GONZÁLEZ PANIAGUA</p>
+    <p>ALURA LATAM - 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

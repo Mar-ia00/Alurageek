@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    background-color: #5300C8; /* Color de fondo */
+    padding: 1rem; /* Espaciado interno */
+    display: flex;
+    justify-content: center; /* Centrar el contenido horizontalmente */
+    align-items: center; /* Centrar el contenido verticalmente */
+    border-bottom: 6px solid rgb(197, 197, 197);
+  }
+  
+  .logo {
+    max-width: 300px; /* Tamaño máximo del logotipo */
+    height: auto;
+  }
+  
+  /* Main */
+  main {
+    padding: 2rem;
+  }
+
+  h2 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 24px;
+    text-align: center; /* Centrados */
+    color: #000000; /* Color negro */
+  }
+  /* Product Section */
+  .product-section {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Products */
+  .products {
+    flex: 1;
+    max-width: 600px;
+    padding: 30px; 
+
+  }
+  
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    max-height: 400px; /* Altura máxima con scroll */
+    overflow-y: auto; /* Habilitar scroll vertical */
+    padding: 1rem;
+    
+    -webkit-box-shadow: -10px 10px 5px 0px rgba(186,186,186,1);
+    -moz-box-shadow: -10px 10px 5px 0px rgba(186,186,186,1);
+    box-shadow: -10px 10px 5px 0px rgba(186,186,186,1);
+  }
+  
+  .product-list .product-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    -webkit-box-shadow: -10px 10px 5px 0px rgba(186,186,186,1);
+    -moz-box-shadow: -10px 10px 5px 0px rgba(186,186,186,1);
+    box-shadow: -10px 10px 5px 0px rgba(186,186,186,1);
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 3px solid #000000;
+    background-color: #5300C8;
+    }
+  
+  .product-list .product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .product-list .product-card h3 {
+    margin: 0.5rem 0;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 15px; 
+    color: #FFFFFF;
+    font-weight: lighter;
+  }
+  
+  .product-list .product-card p {
+    color: #333;
+    margin: 0.5rem 0;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px; 
+    color: #FFFFFF; 
+    font-weight: bold;
+  }
+  
+  .product-card .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .product-card .details p {
+    margin: 0;
+  }
+  .product-list .delete-icon {
+    position: absolute;
+    right: 10px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+  
+  .product-card img {
+    width: 176px;
+    height: 174px;
+    object-fit: cover; /* Mantiene las proporciones si el tamaño no coincide */
+    border-radius: 4px;
+  }
+
+  /* Product Form */
+  .product-form {
+  padding: 40px; /* Espaciado interno */
+  height: 517px; /* Altura del formulario */
+  width: 352px; /* Ancho específico */
+  display: flex; /* Usamos Flexbox para organizar los elementos */
+  flex-direction: column; /* Los elementos se apilan verticalmente */
+  gap: 40px; /* Espaciado entre los elementos */
+  margin: 0 auto; /* Centrado horizontal */
+    
+  }
+  form {
+    gap: 40px; 
+  }
+  .product-form h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  /* Estilos para los inputs */
+.product-form input {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 16px;
+  font-weight: 600; /* Semibold */
+	outline: none;
+	background: #FFFFFF;
+	color: #03318C;
+	border: 3px solid #03318C;
+	border-radius: 50px;
+	box-shadow: 3px 3px 2px 0px #E2E2E2;
+	transition: .3s ease;
+  padding: 0.5rem;
+  height: 30px; /* Altura del layout */
+}
+  input::placeholder {
+	color: #03318C;
+}
+/* Botón */
+.product-form button {
+  width: 100%;
+  height: 55px;
+  background-color: #03318C;
+  color: white;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  padding: 0.75rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.product-form button:hover {
+  background-color: #0456d8; /* Color al pasar el mouse */
+}
+
+.product-form-buttons {
+  display: flex; /* Flexbox para alinear los botones */
+  gap: 13px; /* Espaciado horizontal entre los botones */
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+}
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form label {
+    margin-top: 0.5rem;
+  }
+  
+  form input, form button {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  button {
+    background-color: #222;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #5300C8;
+    color: #fff;
+    font-family: 'IBM Plex Mono', monospace;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+  }
+  
+    /* Media Query para pantallas móviles de 430px o menos */
+    @media (max-width: 430px) {
+      body {
+        margin: 10px;
+      }
+
+      /* Hacemos que el contenedor de productos y formulario sea columna en lugar de fila */
+      .product-section {
+        display: flex;
+        flex-direction: column-reverse; /* Invertir el orden */
+        align-items: center;
+      }
+
+      .product-list {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      }
+        .product-card {
+          width: 100%;
+          max-width: 350px; /* Limita el tamaño máximo de las tarjetas */
+          margin-bottom: 20px;
+        }
+  
+        .custom-file-input {
+          width: 100%;
+        }
+  
+        input, button {
+          font-size: 14px;
+        }
+  
+        h1 {
+          font-size: 22px;
+          text-align: center;
+        }
+      }
